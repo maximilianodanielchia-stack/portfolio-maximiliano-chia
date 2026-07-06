@@ -32,3 +32,4 @@ La exportación original de Notion no contiene archivos de video ni reproductore
 
 - Beacons: https://beacons.ai/viajemosconmaxi
 - Email: maximilianodanielchia@gmail.com
+Actualización del portfolio.
