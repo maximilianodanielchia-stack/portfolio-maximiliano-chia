@@ -4,3 +4,56 @@
 @media(max-width:920px){.nav{display:none;position:absolute;left:20px;right:20px;top:68px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;flex-direction:column;align-items:stretch;box-shadow:var(--shadow)}.nav.open{display:flex}.menu-btn{display:block}.hero-grid,.intro-grid,.section-head,.featured-case,.tools-grid{grid-template-columns:1fr}.hero-grid{gap:55px}.hero{padding-top:60px}.hero-copy{text-align:left}.hero-visual{max-width:600px;margin:auto}.fc-one{left:-10px}.fc-two{right:-10px}.intro-grid,.section-head,.tools-grid{gap:32px}.project-grid,.capability-grid,.flow-grid{grid-template-columns:1fr 1fr}.section{padding:80px 0}.case-media{min-height:300px}}
 @media(max-width:620px){.container{width:min(100% - 28px,1160px)}.hero h1{font-size:45px}.hero-actions .btn{width:100%}.mini-proof{gap:18px;justify-content:space-between}.mini-proof strong{font-size:15px}.mini-proof span{font-size:10px}.floating-card{display:none}.project-grid,.capability-grid,.flow-grid,.tool-groups{grid-template-columns:1fr}.case-content{padding:30px}.case-content h3{font-size:28px}.section-head{margin-bottom:32px}.contact-card{padding:45px 22px}.modal-hero{height:240px}.modal-gallery{grid-template-columns:1fr 1fr}.modal-gallery img{height:130px}footer .container{gap:12px;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+/* Presentación interactiva de Folder IT */
+.presentation-block{
+  margin-top:30px;
+  padding-top:26px;
+  border-top:1px solid var(--line);
+}
+.presentation-btn{
+  min-height:48px;
+  padding:0 20px;
+  border:0;
+  border-radius:999px;
+  background:var(--blue);
+  color:#fff;
+  font:inherit;
+  font-size:14px;
+  font-weight:850;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(27,117,208,.22);
+}
+.presentation-btn:hover{filter:brightness(.96)}
+.presentation-btn:disabled{
+  cursor:default;
+  opacity:.72;
+  box-shadow:none;
+}
+.presentation-note{
+  margin:10px 0 0!important;
+  font-size:12px;
+  color:var(--muted);
+}
+.presentation-shell{
+  position:relative;
+  width:100%;
+  aspect-ratio:1920/1109;
+  margin-top:20px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#071221;
+  box-shadow:0 18px 45px rgba(7,18,33,.12);
+}
+.presentation-shell[hidden]{display:none}
+.presentation-shell iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+@media(max-width:620px){
+  .presentation-btn{width:100%}
+  .presentation-shell{border-radius:12px}
+}
