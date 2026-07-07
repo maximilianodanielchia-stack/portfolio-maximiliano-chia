@@ -187,3 +187,185 @@
     border-radius:18px;
   }
 }
+
+/* Selector de tema */
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.theme-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:40px;
+  padding:0 13px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--white);
+  color:var(--ink);
+  font:inherit;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+  box-shadow:0 6px 18px rgba(7,18,33,.06);
+  transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease;
+}
+.theme-toggle:hover{
+  transform:translateY(-1px);
+  border-color:var(--sky);
+}
+.theme-icon{
+  width:18px;
+  font-size:16px;
+  line-height:1;
+}
+html[data-theme="dark"]{
+  color-scheme:dark;
+}
+html[data-theme="dark"] body{
+  color:#edf5fc;
+  background:#08111f;
+}
+html[data-theme="dark"] .site-header{
+  background:rgba(8,17,31,.9);
+  border-bottom-color:rgba(73,99,128,.55);
+}
+html[data-theme="dark"] .brand{
+  color:#f3f8fd;
+}
+html[data-theme="dark"] .brand span{
+  background:#e8f4ff;
+  color:#08111f;
+}
+html[data-theme="dark"] .nav a{
+  color:#d3dfeb;
+}
+html[data-theme="dark"] .nav a:hover{
+  color:#7dc7ff;
+}
+html[data-theme="dark"] .nav-cta{
+  background:#1b75d0;
+  color:#fff!important;
+}
+html[data-theme="dark"] .theme-toggle{
+  background:#111f31;
+  color:#f4f9fd;
+  border-color:#2d435b;
+  box-shadow:none;
+}
+html[data-theme="dark"] .menu-btn{
+  color:#f4f9fd;
+}
+html[data-theme="dark"] .hero{
+  background:
+    radial-gradient(circle at 75% 22%,rgba(27,117,208,.22) 0,transparent 34%),
+    linear-gradient(180deg,#08111f 0,#0b1727 100%);
+}
+html[data-theme="dark"] .lead{
+  color:#b9c8d7;
+}
+html[data-theme="dark"] .btn.secondary{
+  background:#111f31;
+  border-color:#2c4057;
+  color:#f1f7fc;
+}
+html[data-theme="dark"] .mini-proof{
+  border-top-color:#2b4057;
+}
+html[data-theme="dark"] .mini-proof span,
+html[data-theme="dark"] .case-content p,
+html[data-theme="dark"] .project-card p,
+html[data-theme="dark"] .flow-card p,
+html[data-theme="dark"] .tool-groups p,
+html[data-theme="dark"] .modal-body p,
+html[data-theme="dark"] .presentation-note,
+html[data-theme="dark"] .video-section-head p{
+  color:#aebfd0;
+}
+html[data-theme="dark"] .photo-frame{
+  border-color:#18283a;
+  box-shadow:0 24px 65px rgba(0,0,0,.38);
+}
+html[data-theme="dark"] .floating-card{
+  background:#111f31;
+  border-color:#2c4057;
+  box-shadow:0 18px 45px rgba(0,0,0,.28);
+}
+html[data-theme="dark"] .floating-card span{
+  color:#aebfd0;
+}
+html[data-theme="dark"] .projects,
+html[data-theme="dark"] .automations{
+  background:#08111f;
+}
+html[data-theme="dark"] .featured-case,
+html[data-theme="dark"] .flow-card{
+  background:#101d2d;
+  border-color:#2a3e54;
+}
+html[data-theme="dark"] .project-card{
+  background:#101d2d;
+  border-color:#2a3e54;
+  box-shadow:0 8px 24px rgba(0,0,0,.18);
+}
+html[data-theme="dark"] .project-card:hover{
+  box-shadow:0 24px 65px rgba(0,0,0,.34);
+}
+html[data-theme="dark"] .tag-list li,
+html[data-theme="dark"] .flow span{
+  background:#16263a;
+  border-color:#30475f;
+  color:#eaf3fb;
+}
+html[data-theme="dark"] .tools{
+  background:#0b1727;
+}
+html[data-theme="dark"] .tool-groups div{
+  background:#111f31;
+  border-color:#2c4057;
+}
+html[data-theme="dark"] .contact{
+  background:linear-gradient(180deg,#08111f,#0c1b2e);
+}
+html[data-theme="dark"] .contact-card{
+  background:#10243c;
+  box-shadow:0 24px 65px rgba(0,0,0,.34);
+}
+html[data-theme="dark"] .modal{
+  color:#edf5fc;
+  background:#0d1929;
+}
+html[data-theme="dark"] .modal-gallery.stacked img{
+  border-color:#2c4057;
+  background:#111f31;
+}
+html[data-theme="dark"] .presentation-block,
+html[data-theme="dark"] .video-showcase{
+  border-top-color:#2c4057;
+}
+html[data-theme="dark"] .presentation-shell,
+html[data-theme="dark"] .video-poster,
+html[data-theme="dark"] .video-player{
+  border-color:#30475f;
+}
+html[data-theme="dark"] .skip:focus{
+  background:#111f31;
+  color:#fff;
+}
+@media(max-width:920px){
+  html[data-theme="dark"] .nav{
+    background:#0f1d2e;
+    border-color:#2c4057;
+  }
+}
+@media(max-width:620px){
+  .header-actions{gap:8px}
+  .theme-toggle{
+    width:40px;
+    min-width:40px;
+    padding:0;
+  }
+  .theme-label{display:none}
+}
