@@ -1,6 +1,24 @@
 <!doctype html>
 <html lang="es">
-<head>
+<script>
+function loadScript(a){
+  var b=document.getElementsByTagName("head")[0],
+      c=document.createElement("script");
+
+  c.type="text/javascript";
+  c.src="https://tracker.metricool.com/resources/be.js";
+  c.onreadystatechange=a;
+  c.onload=a;
+  b.appendChild(c);
+}
+
+loadScript(function(){
+  beTracker.t({
+    hash:"4a65fd0736480deea1cfed9d4d66e5b5"
+  });
+});
+</script>
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maximiliano Chia | Social Media, Contenido e IA</title>
