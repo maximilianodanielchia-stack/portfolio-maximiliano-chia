@@ -382,3 +382,17 @@ html[data-theme="dark"] .skip:focus{
   object-fit: contain;
   object-position: center;
 }
+.featured-viajemos{
+  min-height: 0 !important;
+  height: auto;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+}
+
+.featured-viajemos img{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+}
