@@ -396,3 +396,34 @@ html[data-theme="dark"] .skip:focus{
   height: auto;
   object-fit: unset;
 }
+/* CORRECCIÓN PORTADA DESTACADA VIAJEMOS CON MAXI */
+.featured-case{
+  align-items:start;
+}
+
+.featured-viajemos{
+  min-height:0 !important;
+  height:auto !important;
+  align-self:start;
+  display:block;
+  background:transparent !important;
+  overflow:hidden;
+}
+
+.featured-viajemos img{
+  display:block;
+  width:100%;
+  height:auto !important;
+  object-fit:contain !important;
+  object-position:center;
+}
+
+.featured-case .case-content{
+  padding:34px 48px;
+}
+
+@media(max-width:920px){
+  .featured-case .case-content{
+    padding:34px;
+  }
+}
