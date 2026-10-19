@@ -39,7 +39,7 @@ La dirección tendrá un formato similar a:
 
 Los videos de Pristine Luxury Camps y Posada Puerto Bemberg usan portadas locales y crean el reproductor de YouTube únicamente al tocar «play». La presentación de Folder IT también se carga dentro de su sección al seleccionarla. Recorrer el portfolio no inicia solicitudes a YouTube ni a Google Slides. La reproducción requiere JavaScript y acceso a esos servicios; el texto y las imágenes del portfolio son locales.
 
-El diseño mantiene los bordes redondeados y el formato de página continua, con fuentes del sistema. Las imágenes del portfolio conservan sus proporciones y se cargan a medida que se recorre la página. Las animaciones respetan la preferencia de movimiento reducido del navegador.
+El diseño mantiene los bordes redondeados y el formato de página continua, con un fondo suave de color por proyecto y números del 01 al 07. Usa fuentes del sistema. Las imágenes del portfolio conservan sus proporciones y se cargan a medida que se recorre la página. Las animaciones respetan la preferencia de movimiento reducido del navegador.
 
 ## Contacto
 
