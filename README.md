@@ -39,7 +39,11 @@ La dirección tendrá un formato similar a:
 
 Los videos de Pristine Luxury Camps y Posada Puerto Bemberg usan portadas locales y crean el reproductor de YouTube únicamente al tocar «play». La presentación de Folder IT también se carga dentro de su sección al seleccionarla. Recorrer el portfolio no inicia solicitudes a YouTube ni a Google Slides. La reproducción requiere JavaScript y acceso a esos servicios; el texto y las imágenes del portfolio son locales.
 
-El diseño usa fuentes del sistema, acentos de color por proyecto y detalles gráficos hechos con CSS. Las imágenes del portfolio conservan sus proporciones y se cargan a medida que se recorre la página. Las animaciones son breves y respetan la preferencia de movimiento reducido del navegador.
+El diseño mantiene los bordes redondeados y el formato de página continua, con fuentes del sistema. Las imágenes del portfolio conservan sus proporciones y se cargan a medida que se recorre la página. Las animaciones respetan la preferencia de movimiento reducido del navegador.
+
+## Contacto
+
+«Escribir en Gmail» abre una nueva pestaña con el destinatario y el asunto preparados. «Usar mi app de correo» usa un enlace `mailto:` para abrir el cliente de correo configurado en el dispositivo. Si no hay una aplicación configurada, se puede usar la opción de Gmail desde el navegador. Ningún botón envía un mensaje automáticamente.
 
 ## Enlaces incluidos
 
