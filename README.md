@@ -2,6 +2,16 @@
 
 Sitio estático, responsive y gratuito. No requiere base de datos, hosting pago ni dependencias externas.
 
+## Vista local
+
+Desde la raíz del repositorio:
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+El portfolio tiene un formato de página continua: los siete proyectos, sus imágenes, videos y presentación se muestran dentro de la misma página, sin ventanas emergentes ni enlaces externos a los casos. Viajemos con Maxi tiene la misma jerarquía visual que los demás proyectos.
+
 ## Publicarlo gratis con GitHub Pages
 
 1. Crear una cuenta gratuita en GitHub.
@@ -20,16 +30,16 @@ La dirección tendrá un formato similar a:
 
 - Textos: editar `index.html`.
 - Colores y diseño: editar `styles.css`.
-- Casos del modal: editar el objeto `projects` dentro de `script.js`.
+- Proyectos, galerías y reproductores: editar los artículos de la sección `proyectos` en `index.html`.
+- Tema, menú móvil y animaciones: editar `script.js`.
 - Imágenes: reemplazar archivos dentro de `assets/img` manteniendo el mismo nombre.
 - CV: reemplazar `assets/docs/CV-Maximiliano-Chia.pdf`.
 
 ## Videos
 
-La exportación original de Notion no contiene archivos de video ni reproductores incrustados. Para añadirlos sin volver lento el sitio, conviene subirlos a YouTube como “No listado” y luego incorporar miniaturas o embeds con carga diferida.
+Los videos de Pristine Luxury Camps y Posada Puerto Bemberg están integrados en sus proyectos con reproductores de YouTube de carga diferida. La presentación de Folder IT también se muestra dentro de su sección. Estos contenidos requieren acceso a los servicios externos; el texto y las imágenes del portfolio son locales.
 
 ## Enlaces incluidos
 
-- Beacons: https://beacons.ai/viajemosconmaxi
 - Email: maximilianodanielchia@gmail.com
 Actualización del portfolio.

@@ -46,7 +46,7 @@ loadScript(function(){
     <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="Inicio"><span>MC</span> Maximiliano Chia</a>
       <div class="header-actions">
-        <nav class="nav" aria-label="Navegación principal">
+        <nav class="nav" id="site-nav" aria-label="Navegación principal">
           <a href="#proyectos">Proyectos</a>
           <a href="#ia">IA</a>
           <a href="#automatizaciones">Automatizaciones</a>
@@ -57,7 +57,7 @@ loadScript(function(){
           <span class="theme-icon" aria-hidden="true">☾</span>
           <span class="theme-label">Oscuro</span>
         </button>
-        <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">☰</button>
       </div>
     </div>
   </header>
@@ -84,7 +84,7 @@ loadScript(function(){
             <img src="assets/img/perfil.webp" alt="Retrato profesional de Maximiliano Chia" width="900" height="900">
             <span class="availability">Disponible para oportunidades</span>
           </div>
-          <div class="floating-card fc-one"><b>Viajemos con Maxi</b><span>Proyecto propio de contenido turístico</span></div>
+          <div class="floating-card fc-one"><b>Estrategia + Contenido</b><span>De la primera idea a la publicación</span></div>
           <div class="floating-card fc-two"><b>IA + Automatización</b><span>Procesos más rápidos y escalables</span></div>
         </div>
       </div>
@@ -98,7 +98,7 @@ loadScript(function(){
         </div>
         <div class="intro-copy">
           <p>Gestiono redes sociales, desarrollo calendarios editoriales, produzco piezas gráficas y audiovisuales, analizo resultados y construyo comunidades. Mi experiencia incluye turismo, hotelería de lujo y boutique, agencias de viajes, tecnología y marcas de servicios.</p>
-          <p>También soy fundador y host de <strong>Viajemos con Maxi</strong>, evolución de Viajemos por Argentina: un proyecto donde aplico estrategia de contenidos, producción audiovisual, storytelling, crecimiento orgánico y colaboraciones con el sector turístico.</p>
+          <p>Me involucro en todo el proceso: desde la idea y el guion hasta el diseño, la edición y la publicación. Combino una mirada estratégica con la ejecución diaria para darle coherencia a cada marca y conectar con su comunidad.</p>
         </div>
       </div>
     </section>
@@ -106,46 +106,112 @@ loadScript(function(){
     <section class="section projects" id="proyectos">
       <div class="container">
         <div class="section-head">
-          <div><p class="section-kicker">TRABAJOS SELECCIONADOS</p><h2>Proyectos que muestran el proceso, no solo la estética.</h2></div>
-          <p>Selección de experiencias en estrategia, contenido, community management y comunicación digital.</p>
+          <div><p class="section-kicker">TRABAJOS SELECCIONADOS</p><h2>Marcas, ideas y contenido en acción.</h2></div>
+          <p>Un recorrido por mis trabajos en turismo, tecnología y servicios. Estrategia, comunicación y piezas para ver en detalle.</p>
         </div>
 
-        <article class="featured-case featured-viajemos-case reveal">
-          <div class="case-media featured-viajemos">
-            <img src="assets/img/viajemos.webp" alt="Proyecto Viajemos por Argentina, actualmente Viajemos con Maxi" loading="lazy">
-          </div>        <div class="case-content">
-            <span class="case-number">01 / PROYECTO PROPIO</span>
-            <h3>Viajemos por Argentina → Viajemos con Maxi</h3>
-            <p>Dirección integral de una marca de contenido turístico: estrategia, guiones, producción audiovisual, edición, publicación, comunidad y desarrollo de formatos pensados para retención y crecimiento.</p>
-            <ul class="tag-list"><li>Estrategia</li><li>Video corto</li><li>Storytelling</li><li>Comunidad</li></ul>
-            <a class="text-link" href="https://beacons.ai/viajemosconmaxi" target="_blank" rel="noopener">Ver ecosistema de la marca ↗</a>
-          </div>
-        </article>
+        <div class="project-list">
+          <article class="project-case" aria-labelledby="pristine-title">
+            <header class="case-heading">
+              <div><p class="case-category"><span class="case-number">01</span> HOTELERÍA DE LUJO</p><h3 id="pristine-title">Pristine Luxury Camps</h3></div>
+              <div class="case-summary"><p>Comunicación para una propuesta de hotelería premium. Desarrollo de contenido visual, moderación de redes y atención de consultas sobre destinos, alojamientos y experiencias.</p><ul class="tag-list"><li>Hotelería</li><li>Community management</li><li>Atención al cliente</li></ul></div>
+            </header>
+            <img class="case-cover" src="assets/img/pristine-v2.webp" alt="Selección de contenidos para Pristine Luxury Camps" width="1672" height="941" loading="lazy">
+            <div class="case-gallery case-gallery-wide" aria-label="Piezas de comunicación de Pristine Luxury Camps">
+              <img src="assets/img/pristine_web1.webp" alt="Primera serie de piezas visuales para Pristine Luxury Camps" width="1400" height="438" loading="lazy">
+              <img src="assets/img/pristine_web2.webp" alt="Segunda serie de piezas visuales para Pristine Luxury Camps" width="1400" height="438" loading="lazy">
+              <img src="assets/img/pristine_web3.webp" alt="Tercera serie de piezas visuales para Pristine Luxury Camps" width="1400" height="438" loading="lazy">
+            </div>
+            <section class="case-videos" aria-labelledby="pristine-videos">
+              <h4 id="pristine-videos">Contenido audiovisual</h4>
+              <div class="video-grid">
+                <iframe src="https://www.youtube-nocookie.com/embed/sIeMTL31240?rel=0&playsinline=1" title="Pristine Luxury Camps — video 1" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/3RlLkznVKjA?rel=0&playsinline=1" title="Pristine Luxury Camps — video 2" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/J01pXIVPnMQ?rel=0&playsinline=1" title="Pristine Luxury Camps — video 3" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </section>
+          </article>
 
-        <div class="project-grid">
-          <article class="project-card reveal" data-project="pristine">
-            <img src="assets/img/pristine-v2.webp" alt="Trabajo para Pristine Luxury Camps" loading="lazy">
-            <div><span>HOTELERÍA DE LUJO</span><h3>Pristine Luxury Camps</h3><p>Comunicación para alojamientos premium, moderación y atención de consultas en redes sociales.</p><button class="card-link" type="button">Ver caso</button></div>
+          <article class="project-case" aria-labelledby="posada-title">
+            <header class="case-heading">
+              <div><p class="case-category"><span class="case-number">02</span> TURISMO Y HOSPITALIDAD</p><h3 id="posada-title">Posada Puerto Bemberg</h3></div>
+              <div class="case-summary"><p>Contenido y comunicación digital para una experiencia hotelera en Misiones. Una mirada puesta en la naturaleza, el patrimonio y las experiencias que hacen único al destino.</p><ul class="tag-list"><li>Turismo</li><li>Hospitalidad</li><li>Contenido visual</li></ul></div>
+            </header>
+            <img class="case-cover" src="assets/img/posada.webp" alt="Contenidos de Posada Puerto Bemberg y su entorno natural" width="1672" height="941" loading="lazy">
+            <section class="case-videos" aria-labelledby="posada-videos">
+              <h4 id="posada-videos">Contenido audiovisual</h4>
+              <div class="video-grid">
+                <iframe src="https://www.youtube-nocookie.com/embed/43joZtI0Dy8?rel=0&playsinline=1" title="Posada Puerto Bemberg — video 1" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/qDix97CDZak?rel=0&playsinline=1" title="Posada Puerto Bemberg — video 2" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/n1VdZZLolmw?rel=0&playsinline=1" title="Posada Puerto Bemberg — video 3" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </section>
           </article>
-          <article class="project-card reveal" data-project="posada">
-            <img src="assets/img/posada.webp" alt="Trabajo para Posada Puerto Bemberg" loading="lazy">
-            <div><span>TURISMO Y HOSPITALIDAD</span><h3>Posada Puerto Bemberg</h3><p>Contenido visual y comunicación digital para una experiencia hotelera vinculada con naturaleza y destino.</p><button class="card-link" type="button">Ver caso</button></div>
+
+          <article class="project-case" aria-labelledby="emigrando-title">
+            <header class="case-heading">
+              <div><p class="case-category"><span class="case-number">03</span> LANZAMIENTO DIGITAL</p><h3 id="emigrando-title">E-Migrando</h3></div>
+              <div class="case-summary"><p>Estrategia digital y contenidos para el lanzamiento de una aplicación orientada a migrantes. Comunicación del producto y piezas de presentación, con más de 100 descargas durante el primer mes.</p><ul class="tag-list"><li>Lanzamiento</li><li>Growth</li><li>Contenido</li><li>Producto digital</li></ul></div>
+            </header>
+            <img class="case-cover" src="assets/img/emigrando.webp" alt="Identidad y contenidos del proyecto E-Migrando" width="1672" height="941" loading="lazy">
+            <div class="case-gallery" aria-label="Piezas del lanzamiento de E-Migrando">
+              <img src="assets/img/emigrando4.webp" alt="Pieza de comunicación de E-Migrando, primera muestra" width="2000" height="1333" loading="lazy">
+              <img src="assets/img/emigrando5.webp" alt="Pieza de comunicación de E-Migrando, segunda muestra" width="2000" height="1333" loading="lazy">
+              <img src="assets/img/emigrando6.webp" alt="Pieza de comunicación de E-Migrando, tercera muestra" width="2000" height="1333" loading="lazy">
+              <img src="assets/img/emigrando1.webp" alt="Contenido de presentación de E-Migrando, primera muestra" width="1400" height="1244" loading="lazy">
+              <img src="assets/img/emigrando2.webp" alt="Contenido de presentación de E-Migrando, segunda muestra" width="1400" height="1244" loading="lazy">
+              <img src="assets/img/emigrando3.webp" alt="Contenido de presentación de E-Migrando, tercera muestra" width="1400" height="1244" loading="lazy">
+            </div>
           </article>
-          <article class="project-card reveal" data-project="emigrando">
-            <img src="assets/img/emigrando.webp" alt="Proyecto E-Migrando" loading="lazy">
-            <div><span>LANZAMIENTO DIGITAL</span><h3>E-Migrando</h3><p>Estrategia y contenidos para el lanzamiento de una aplicación, con más de 100 descargas durante el primer mes.</p><button class="card-link" type="button">Ver caso</button></div>
+
+          <article class="project-case" aria-labelledby="folder-title">
+            <header class="case-heading">
+              <div><p class="case-category"><span class="case-number">04</span> TECNOLOGÍA</p><h3 id="folder-title">Folder IT</h3></div>
+              <div class="case-summary"><p>Community management, comunicación y publicidad para una empresa de desarrollo de software. Servicios técnicos traducidos a mensajes claros y contenido pensado para redes sociales.</p><ul class="tag-list"><li>Tecnología</li><li>Community management</li><li>Publicidad</li></ul></div>
+            </header>
+            <img class="case-cover" src="assets/img/folder.webp" alt="Diseño y comunicación digital para Folder IT" width="1400" height="788" loading="lazy">
+            <section class="case-presentation" aria-labelledby="folder-presentation">
+              <h4 id="folder-presentation">Presentación del proyecto</h4>
+              <div class="presentation-shell"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ6xBtOMoYt0KiD5thIm5m1aUYcquSWsiYYrKKNNWI91GrnFNZcDKXksDOR2qOJxg/pubembed?start=false&amp;loop=false&amp;delayms=3000" title="Presentación completa de Folder IT" loading="lazy" allowfullscreen></iframe></div>
+            </section>
           </article>
-          <article class="project-card reveal" data-project="folder">
-            <img src="assets/img/folder.webp" alt="Proyecto Folder IT" loading="lazy">
-            <div><span>TECNOLOGÍA</span><h3>Folder IT</h3><p>Community management, contenido y publicidad para una empresa de desarrollo de software.</p><button class="card-link" type="button">Ver caso</button></div>
+
+          <article class="project-case" aria-labelledby="efe-title">
+            <header class="case-heading">
+              <div><p class="case-category"><span class="case-number">05</span> AGENCIA Y MULTIMARCA</p><h3 id="efe-title">Agencia EFE</h3></div>
+              <div class="case-summary"><p>Producción y adaptación de contenidos para cuentas de distintos rubros. Piezas gráficas, criterios visuales y tonos de comunicación ajustados a cada marca y a su público.</p><ul class="tag-list"><li>Agencia</li><li>Multimarca</li><li>Diseño de contenido</li></ul></div>
+            </header>
+            <img class="case-cover" src="assets/img/efe_cover.webp" alt="Selección de trabajos para Agencia EFE" width="1672" height="941" loading="lazy">
+            <div class="case-gallery" aria-label="Trabajos de contenido para Agencia EFE">
+              <img src="assets/img/efe2.webp" alt="Contenido de Agencia EFE, muestra 1" width="1400" height="933" loading="lazy">
+              <img src="assets/img/efe3.webp" alt="Contenido de Agencia EFE, muestra 2" width="1800" height="1200" loading="lazy">
+              <img src="assets/img/efe4.webp" alt="Contenido de Agencia EFE, muestra 3" width="1800" height="1200" loading="lazy">
+              <img src="assets/img/efe5.webp" alt="Contenido de Agencia EFE, muestra 4" width="1800" height="1200" loading="lazy">
+              <img src="assets/img/efe6.webp" alt="Contenido de Agencia EFE, muestra 5" width="1800" height="1200" loading="lazy">
+              <img src="assets/img/efe7.webp" alt="Contenido de Agencia EFE, muestra 6" width="1800" height="1200" loading="lazy">
+              <img src="assets/img/efe8.webp" alt="Contenido de Agencia EFE, muestra 7" width="1800" height="1200" loading="lazy">
+            </div>
           </article>
-          <article class="project-card reveal" data-project="efe">
-            <img src="assets/img/efe_cover.webp" alt="Portada del proyecto Agencia EFE" loading="lazy">
-            <div><span>AGENCIA Y MULTIMARCA</span><h3>Agencia EFE</h3><p>Producción de contenidos y adaptación visual para cuentas de diferentes sectores y públicos.</p><button class="card-link" type="button">Ver caso</button></div>
+
+          <article class="project-case" aria-labelledby="luhod-title">
+            <header class="case-heading">
+              <div><p class="case-category"><span class="case-number">06</span> SERVICIOS EMPRESARIALES</p><h3 id="luhod-title">Luhod LLC</h3></div>
+              <div class="case-summary"><p>Comunicación de servicios empresariales para emprendedores y freelancers. Diseño de piezas informativas y contenido educativo sobre servicios y formación de empresas.</p><ul class="tag-list"><li>Servicios</li><li>Contenido educativo</li><li>Redes sociales</li></ul></div>
+            </header>
+            <img class="case-cover" src="assets/img/luhod.webp" alt="Identidad y contenidos de Luhod LLC" width="1672" height="941" loading="lazy">
+            <div class="case-gallery" aria-label="Piezas informativas de Luhod LLC">
+              <img src="assets/img/luhod2.webp" alt="Pieza informativa para Luhod LLC, muestra 1" width="2000" height="1333" loading="lazy">
+              <img src="assets/img/luhod3.webp" alt="Pieza informativa para Luhod LLC, muestra 2" width="2000" height="1333" loading="lazy">
+              <img src="assets/img/luhod4.webp" alt="Pieza informativa para Luhod LLC, muestra 3" width="2000" height="1333" loading="lazy">
+            </div>
           </article>
-          <article class="project-card reveal" data-project="luhod">
-            <img src="assets/img/luhod.webp" alt="Proyecto Luhod LLC" loading="lazy">
-            <div><span>SERVICIOS EMPRESARIALES</span><h3>Luhod LLC</h3><p>Diseño y comunicación de servicios para emprendedores, freelancers y formación de empresas.</p><button class="card-link" type="button">Ver caso</button></div>
+
+          <article class="project-case" aria-labelledby="viajemos-title">
+            <header class="case-heading">
+              <div><p class="case-category"><span class="case-number">07</span> CONTENIDO TURÍSTICO</p><h3 id="viajemos-title">Viajemos con Maxi</h3></div>
+              <div class="case-summary"><p>Proyecto propio, antes Viajemos por Argentina. Dirección integral de una marca de contenido turístico: estrategia, guiones, producción audiovisual, edición y comunidad, con formatos pensados para retención y crecimiento.</p><ul class="tag-list"><li>Estrategia</li><li>Video corto</li><li>Storytelling</li><li>Comunidad</li></ul></div>
+            </header>
+            <img class="case-cover" src="assets/img/viajemos.webp" alt="Contenido turístico de Viajemos con Maxi, antes Viajemos por Argentina" width="1672" height="1087" loading="lazy">
           </article>
         </div>
       </div>
@@ -162,7 +228,6 @@ loadScript(function(){
           <article class="cap-card reveal"><div class="cap-icon">✦</div><h3>Imágenes y creatividad</h3><p>Conceptualización, prompts, variaciones visuales, retoque y adaptación a miniaturas, reels, historias y campañas.</p><span>Proceso: idea → dirección visual → generación → edición</span></article>
           <article class="cap-card reveal"><div class="cap-icon">⌁</div><h3>Guiones y sistemas de contenido</h3><p>Hooks, estructuras de retención, versiones por plataforma, SEO, metadatos y reutilización estratégica del contenido.</p><span>Herramientas: ChatGPT, ElevenLabs, CapCut y Canva</span></article>
         </div>
-        <a class="btn ghost-light" href="https://beacons.ai/viajemosconmaxi" target="_blank" rel="noopener">Ver contenido publicado ↗</a>
       </div>
     </section>
 
@@ -173,7 +238,7 @@ loadScript(function(){
           <p>Flujos desarrollados para captación, distribución de recursos, respuesta automática y organización de contactos.</p>
         </div>
         <div class="flow-grid">
-          <article class="flow-card reveal"><h3>Captación y entrega de recursos</h3><div class="flow"><span>Beacons</span><i>→</i><span>Base de contactos</span><i>→</i><span>Email automático</span></div><p>Registro de leads y envío organizado de materiales descargables sin repetir el proceso de forma manual.</p></article>
+          <article class="flow-card reveal"><h3>Captación y entrega de recursos</h3><div class="flow"><span>Formulario</span><i>→</i><span>Base de contactos</span><i>→</i><span>Email automático</span></div><p>Registro de leads y envío organizado de materiales descargables sin repetir el proceso de forma manual.</p></article>
           <article class="flow-card reveal"><h3>Respuestas automáticas en Meta</h3><div class="flow"><span>Comentario</span><i>→</i><span>Palabra clave</span><i>→</i><span>Mensaje privado</span></div><p>Flujos para campañas, sorteos y distribución de enlaces con una experiencia simple para el usuario.</p></article>
           <article class="flow-card reveal"><h3>Gestión con Google Apps Script</h3><div class="flow"><span>Datos</span><i>→</i><span>Validación</span><i>→</i><span>Envío y registro</span></div><p>Automatización de tareas operativas, control de errores y trazabilidad básica de envíos.</p></article>
         </div>
@@ -199,7 +264,6 @@ loadScript(function(){
         <p>Estoy disponible para oportunidades laborales, proyectos freelance y colaboraciones vinculadas con turismo, hotelería, comunicación y contenido digital.</p>
         <div class="contact-actions">
           <a class="btn primary" href="mailto:maximilianodanielchia@gmail.com">Enviar email</a>
-          <a class="btn secondary dark" href="https://beacons.ai/viajemosconmaxi" target="_blank" rel="noopener">Abrir Beacons ↗</a>
         </div>
         <small>maximilianodanielchia@gmail.com</small>
       </div>
@@ -208,10 +272,6 @@ loadScript(function(){
 
   <footer><div class="container"><span>© <span id="year"></span> Maximiliano Chia</span><span>Portfolio profesional</span></div></footer>
 
-  <dialog id="project-modal" class="modal">
-    <button class="modal-close" aria-label="Cerrar">×</button>
-    <div id="modal-content"></div>
-  </dialog>
   <script src="script.js"></script>
 </body>
 </html>
