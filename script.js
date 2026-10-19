@@ -55,6 +55,26 @@ window.matchMedia('(min-width: 921px)').addEventListener?.('change',event=>{
 });
 document.getElementById('year').textContent=new Date().getFullYear();
 
+// Reuse local posters; third-party players only load after an explicit click.
+document.querySelectorAll('.media-launch').forEach(button=>{
+ button.addEventListener('click',()=>{
+   const videoId=button.dataset.videoId;
+   const frame=document.createElement('iframe');
+   frame.title=button.dataset.mediaTitle;
+   frame.src=videoId
+     ?`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`
+     :button.dataset.presentationSrc;
+   frame.allow='autoplay; encrypted-media; picture-in-picture; web-share';
+   frame.allowFullscreen=true;
+   frame.referrerPolicy='strict-origin-when-cross-origin';
+   frame.tabIndex=0;
+   button.closest('.media-slot').classList.add('is-playing');
+   button.replaceWith(frame);
+   frame.focus({preventScroll:true});
+ },{once:true});
+ button.disabled=false;
+});
+
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 const revealElements=()=>{
  document.querySelectorAll('.reveal-pending').forEach(el=>el.classList.remove('reveal-pending'));
